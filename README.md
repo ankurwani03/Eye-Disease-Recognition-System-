@@ -1,6 +1,6 @@
-# Ocular Disease Intelligent Recognition Through Deep Learning Architectures
+# Eye Disease Recognition System
 
-Welcome to the repository for Jordi Corbilla's MSc dissertation, titled **"Ocular Disease Intelligent Recognition Through Deep Learning Architectures."** The dissertation was published by Universitat Oberta de Catalunya in 2020 and can be accessed through this link: [http://openaccess.uoc.edu/webapps/o2/handle/10609/113126].
+Welcome to the repository for Jordi Corbilla's MSc dissertation, titled **"Eye Disease Recognition System."** The dissertation was published by Universitat Oberta de Catalunya in 2020 and can be accessed through this link: [http://openaccess.uoc.edu/webapps/o2/handle/10609/113126].
 
 The PDFs and sources for the dissertation are licensed under the Creative Commons Attribution license, which is detailed in the LICENSE file. We hope you find the dissertation and associated materials helpful in your own research and learning endeavors.
 
@@ -60,13 +60,6 @@ Image classification, Deep learning, Retinography, Convolutional neural networks
 
 <p align="justify">The confusion matrices reveal interesting insights about the performance of the models. The Inception model outperforms the VGG model in correctly classifying images, as indicated by a higher number of values on the diagonal. However, there are still some classes, such as hypertension, where both models struggle to correctly classify images. The Inception model achieves an overall accuracy of 80%, with the exception of hypertension and other pathologies, where its performance drops to 22% and 32% respectively. This indicates that despite using data augmentation, there are still features that the model has not learned. On the other hand, the VGG model achieves an accuracy of 57%, with similar issues in correctly classifying hypertension images. Overall, both models show promise in recognizing ocular diseases, but further improvements are needed to address the misclassifications in certain classes.</p>
 
-## Classification Output
-
-![classificationoutput](images/classificationoutput.png)
-
-<p align="justify">The final section of the report presents the output of each model and provides some conclusions. The code for training, validation, and inference is included in this repository, allowing for reproducibility and further exploration.</p>
-
-<p align="justify">Upon examining the model output, we can see that both models produce the same classification for each image. However, upon closer inspection, we can see that the response of each model's output differs significantly.</p>
 
 ## Conclusions
 
@@ -351,23 +344,3 @@ python.exe odir_inception_ResNetV2_testing_inference.py
 - Xie, S., Girshick, R. and Dollár, P. and Tu, P. and He, K. (2016). Aggregated Residual Transformations for Deep Neural Networks. Cornell University.
 - Yorston, D. (2003). Retinal Diseases and VISION 2020. Community Eye Health. 2003;16(46):19–20.
 - Zhou, Y., He, X., Huang, L., Liu, L., Zhu, F., Cui, S., Shao, L. (2019). Collaborative Learning of Semi-Supervised Segmentation and Classification for Medical Images. The IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
-
-### Links to Materials
-
-- [[vgg_model_summary.md]]
-- [[generated_ground_truth.md]]
-- [[inception_model_summary.md]]
-- [[generated_ground_truth.md]]
-- [[list_discarded_images.md]]
-- [[odir_training_images_pruning.md]]
-- [[configuration.md]]
-- [[readme.md]]
-
-### License
-
-Creative Commons Attribution-NonCommercial 4.0 International Public License.
-
-## Sponsors
-No sponsors yet! Will you be the first?
-
-[![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/paypalme/jordicorbilla)
